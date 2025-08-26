@@ -1,5 +1,3 @@
-# React 介绍
-
 ## *React* 基本介绍
 
 *React* 起源于 *Facebook* 的内部项目，因为该公司对市场上所有 *JavaScript MVC* 框架都不满意，就决定自己写一套，用来架设 *Instagram* 的网站。

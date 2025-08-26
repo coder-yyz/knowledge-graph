@@ -12,7 +12,8 @@ const initSidebar = (dirPath, sidebar) => {
     if (stats.isDirectory()) { // 如果是目录，递归处理
       const dirSidebar = {
         text: file,
-        items: []
+        collapsed: false,
+        items: [],
       }
       initSidebar(fullPath, dirSidebar.items)
       sidebar.push(dirSidebar)
@@ -27,7 +28,6 @@ const initSidebar = (dirPath, sidebar) => {
 }
 
 initSidebar(path.resolve(__dirname, './docs'), sidebar)
-console.log(JSON.stringify(sidebar))
 
 
 export default {
